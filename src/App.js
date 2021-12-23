@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as HashRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import ScrollButton from './components/ScrollButton';
 import Home from './pages/Home';
@@ -21,7 +21,7 @@ function App() {
   return (
     <>
         <body style={{paddingBottom: '150px'}}>
-        <Router>
+        <HashRouter>
           <Navbar/>
           <Routes>
             <Route path='/' exact element={<Home />}></Route>
@@ -39,7 +39,7 @@ function App() {
           </Routes>
           <ScrollButton/>
           <Footer/>
-        </Router>
+        </HashRouter>
         </body>
     </>
   );

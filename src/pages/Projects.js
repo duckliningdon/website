@@ -3,7 +3,7 @@ import MetaTags from 'react-meta-tags';
 import { AiFillTag } from 'react-icons/ai'
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 import PacmanLoader from 'react-spinners/PacmanLoader'; // Maybe change to ring loader if color scheme changes
-import { Header, HeaderBox, Section, HeaderTitle } from '../components/Global/Global';
+import { Header, HeaderBox, Section, HeaderTitle, LoadingContainer, Loading } from '../components/Global/Global';
 import { GridContainer, BlogCard, Img, CardInfo, Hr, TitleContent, HeaderThree, TagList, UtilityList, ExternalLinks, InternalLinks, Tag } from '../components/ProjectElements';
 import { projects } from '../constants/constants';
 
@@ -86,9 +86,9 @@ function Projects() {
                     <HeaderBox><HeaderTitle>PROJECTS</HeaderTitle></HeaderBox>
                 </Header>
             </Section>
-            <div className="loadingContainer">
-                <PacmanLoader className="loading" size={30} color={'#000'} />
-            </div>
+            <LoadingContainer>
+                <Loading><PacmanLoader size={30} color={'#000'} /></Loading>
+            </LoadingContainer>
             </>
             )}
       </>
