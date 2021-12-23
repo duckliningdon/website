@@ -5,7 +5,7 @@ export const GridContainer = styled.section`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     padding-top: 3rem;
-    place-items: baseline;
+    place-items: baseline center;
     column-gap: 1.5rem;
     row-gap: 3rem;
     width: 75%;
