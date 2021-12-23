@@ -1,34 +1,36 @@
 import React from 'react'
 import MetaTags from 'react-meta-tags';
 import { Header, HeaderBox, Section, SectionText, HeaderTitle, Divider } from '../../components/Global/Global';
+import { Opening, OpeningCard, OpeningHeader, OpeningBody, OpeningText, OpeningLink, OpeningImg, ImgSection, ImgCard, Img } from '../../components/Global/Blog';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 function energysword() {
     return (
         <>
             <MetaTags>
-                <title>Samuel Swedberg | About</title> 
+                <title>Samuel Swedberg | Energy Sword</title> 
             </MetaTags>
             <Section>
                 <Header style={{backgroundImage: `url("/media/pages/about/header.jpg")`}}>
-                    <HeaderBox><HeaderTitle>ABOUT</HeaderTitle></HeaderBox>
+                    <HeaderBox><HeaderTitle>HALO ENERGY SWORD</HeaderTitle></HeaderBox>
                 </Header>
             </Section>
             <Divider/>
-            <Section>
-                <SectionText>I'm a freshman at North Dakota State University currently studying electrical engineering. I have a particular interest in robotics, but I am looking forward to expanding my knowledge and explore the engineering world. In my free time, you can find me often working out, playing video games, or working on my projects. I've always been a maker. Whether that was putting together LEGOs at a young age, creating content, or building electronics... I've always loved creating. I often teach myself new skills such as 3D printing, basic programming, and a handful of musical instruments. If you can't tell, I have a problem of wanting to do everything possible. I am passionate for learning new things and seeking the satisfaction that comes from completing a project. To see a collection of my proudest projects, click here. If you want to see what I'm doing in my life right now, click here.
-                </SectionText>
-            </Section>
+            <Opening>
+                <OpeningCard>
+                    <OpeningBody>
+                        <OpeningHeader>Useful links</OpeningHeader>
+                            <OpeningText><OpeningLink href="https://www.thingiverse.com/thing:1296677" target="_blank">Thingiverse <FaExternalLinkAlt/></OpeningLink></OpeningText>
+                    </OpeningBody>
+                    <OpeningImg style={{backgroundImage: `url("/media/pages/projects/3dprinting/esword/thumbnail.jpg")`}}></OpeningImg>
+                </OpeningCard>
+            </Opening>
             <Divider/>
             <Section>
-                <Header style={{backgroundImage: `url("/media/pages/about/mission.JPG")`}}>
-                    <HeaderBox><HeaderTitle>MY MISSION</HeaderTitle></HeaderBox>
-                </Header>
+                <SectionText>This project was rather frustrating. It was fun to print out using transparent filament, putting together the sides were annoying. It was also difficult since the LED strip was too wide to fit inside, even when I cut down the sides. It's all connected to an Arduino nano.</SectionText>
             </Section>
             <Divider/>
-            <Section>
-                <SectionText>My personal mission is to live as a good example of how Christ would live and to inspire others to do the best they can in every aspect of his or her life. I will use my abilities and God given talents to make an impact on the world and in people’s life, no matter how big or small the impact is. My student mission is to be a diligent learner and active listener. I will strive to always work hard, be respectful to those in authority and responsible with my actions.
-                </SectionText>
-            </Section>
+                <ImgSection><ImgCard><Img style={{backgroundImage: `url("/media/pages/projects/3dprinting/esword/thumbnail.jpg")`}}></Img></ImgCard></ImgSection>
             <Divider/>
         </>
     )

@@ -51,6 +51,14 @@ export const Section = styled.section`
     padding-bottom: 10px;
 `;
 
+export const SectionHeader = styled.h2`
+    width: 100vmin;
+    margin-bottom: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: ${(props) => props.center ? 'center' : 'left'};
+`;
+
 export const SectionText = styled.p`
     width: 100vmin;
     margin-bottom: auto;

@@ -1,23 +1,36 @@
 import React from 'react'
 import MetaTags from 'react-meta-tags';
 import { Header, HeaderBox, Section, SectionText, HeaderTitle, Divider } from '../../components/Global/Global';
+import { Opening, OpeningCard, OpeningHeader, OpeningBody, OpeningText, OpeningLink, OpeningImg, ImgSection, ImgCard, Img } from '../../components/Global/Blog';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 function kenobisaber() {
     return (
         <>
             <MetaTags>
-                <title>Samuel Swedberg | Master Chief</title> 
+                <title>Samuel Swedberg | Obi-Wan Kenobi Lightsaber</title> 
             </MetaTags>
             <Section>
                 <Header style={{backgroundImage: `url("/media/pages/about/header.jpg")`}}>
-                    <HeaderBox><HeaderTitle>MASTER CHIEF HELMET</HeaderTitle></HeaderBox>
+                    <HeaderBox><HeaderTitle>OBI-WAN KENOBI LIGHTSABER</HeaderTitle></HeaderBox>
                 </Header>
             </Section>
             <Divider/>
+            <Opening>
+                <OpeningCard>
+                    <OpeningBody>
+                        <OpeningHeader>Useful links</OpeningHeader>
+                            <OpeningText><OpeningLink href="https://www.thingiverse.com/thing:1839833" target="_blank">Thingiverse <FaExternalLinkAlt/></OpeningLink></OpeningText>
+                    </OpeningBody>
+                    <OpeningImg style={{backgroundImage: `url("/media/pages/projects/3dprinting/kenobi/thumbnail.jpg")`}}></OpeningImg>
+                </OpeningCard>
+            </Opening>
+            <Divider/>
             <Section>
-                <SectionText>I'm a freshman at North Dakota State University currently studying electrical engineering. I have a particular interest in robotics, but I am looking forward to expanding my knowledge and explore the engineering world. In my free time, you can find me often working out, playing video games, or working on my projects. I've always been a maker. Whether that was putting together LEGOs at a young age, creating content, or building electronics... I've always loved creating. I often teach myself new skills such as 3D printing, basic programming, and a handful of musical instruments. If you can't tell, I have a problem of wanting to do everything possible. I am passionate for learning new things and seeking the satisfaction that comes from completing a project. To see a collection of my proudest projects, click here. If you want to see what I'm doing in my life right now, click here.
-                </SectionText>
+                <SectionText>This was the first actual project I did on my Ender 3 Pro. I was still discovering and learning about all the settings, and somehow while messing around my infill settings got put to some crazy value (like less than 1%), which basically made all of the parts hallow. I still went with it, however a few of the parts I had to reprint since they either fell apart when putting together the lightsaber or they just didn't come out great at all. The connection holes were crazy tight too, so it was very difficult to get them to go together, so I can to really sand down the holes.</SectionText>
             </Section>
+            <Divider/>
+                <ImgSection><ImgCard><Img style={{backgroundImage: `url("/media/pages/projects/3dprinting/kenobi/thumbnail.jpg")`}}></Img></ImgCard></ImgSection>
             <Divider/>
         </>
     )

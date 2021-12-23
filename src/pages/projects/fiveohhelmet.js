@@ -1,23 +1,36 @@
 import React from 'react'
 import MetaTags from 'react-meta-tags';
 import { Header, HeaderBox, Section, SectionText, HeaderTitle, Divider } from '../../components/Global/Global';
+import { Opening, OpeningCard, OpeningHeader, OpeningBody, OpeningText, OpeningLink, OpeningImg, ImgSection, ImgCard, Img } from '../../components/Global/Blog';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 function fiveohhelmet() {
     return (
         <>
             <MetaTags>
-                <title>Samuel Swedberg | Master Chief</title> 
+                <title>Samuel Swedberg | 501st Helmet</title> 
             </MetaTags>
             <Section>
                 <Header style={{backgroundImage: `url("/media/pages/about/header.jpg")`}}>
-                    <HeaderBox><HeaderTitle>MASTER CHIEF HELMET</HeaderTitle></HeaderBox>
+                    <HeaderBox><HeaderTitle>501ST HELMET</HeaderTitle></HeaderBox>
                 </Header>
             </Section>
             <Divider/>
+            <Opening>
+                <OpeningCard>
+                    <OpeningBody>
+                        <OpeningHeader>Useful links</OpeningHeader>
+                            <OpeningText><OpeningLink href="https://www.thingiverse.com/thing:2718242" target="_blank">Thingiverse <FaExternalLinkAlt/></OpeningLink></OpeningText>
+                    </OpeningBody>
+                    <OpeningImg style={{backgroundImage: `url("/media/pages/projects/3dprinting/501st/tnh.jpg")`}}></OpeningImg>
+                </OpeningCard>
+            </Opening>
+            <Divider/>
             <Section>
-                <SectionText>I'm a freshman at North Dakota State University currently studying electrical engineering. I have a particular interest in robotics, but I am looking forward to expanding my knowledge and explore the engineering world. In my free time, you can find me often working out, playing video games, or working on my projects. I've always been a maker. Whether that was putting together LEGOs at a young age, creating content, or building electronics... I've always loved creating. I often teach myself new skills such as 3D printing, basic programming, and a handful of musical instruments. If you can't tell, I have a problem of wanting to do everything possible. I am passionate for learning new things and seeking the satisfaction that comes from completing a project. To see a collection of my proudest projects, click here. If you want to see what I'm doing in my life right now, click here.
-                </SectionText>
+                <SectionText>This was the main reason why I wanted to get a 3D printer in the first place. I saw on reddit a Captain Rex and Commander Cody helmet figure and I wondered how hard it would be to get one of those. That's when I discovered that 3D printing price has come down since the last time I checked it (which was like over 5 years ago when I was 12 or something and had no money...) That's when I decided to pull the trigger on getting myself an Ender 3 Pro, which looking back was a fantastic decision. I won't go into the details of how I made the helmet, since you can go check the references page. Even a year later while rewriting this section, it is probably my favorite thing I've made with the 3D printer.</SectionText>
             </Section>
+            <Divider/>
+                <ImgSection><ImgCard><Img style={{backgroundImage: `url("/media/pages/projects/3dprinting/501st/tnh.jpg")`}}></Img></ImgCard></ImgSection>
             <Divider/>
         </>
     )
