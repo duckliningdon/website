@@ -20,7 +20,6 @@ export const Button = styled.div`
    height: 20px;
    font-size: 3rem;
    z-index: 101;
-   cursor: pointer;
    color: black;;
 `;
 
@@ -50,7 +49,7 @@ window.addEventListener('scroll', toggleVisible);
 return (
 	<Button>
 	<BsFillArrowUpSquareFill onClick={scrollToTop}
-	style={{display: visible ? 'inline' : 'none', left: '1rem', position: 'relative'}} />
+	style={{display: visible ? 'inline' : 'none', left: '1rem', position: 'relative', cursor: visible ? 'pointer' : 'auto'}} />
 	</Button>
 );
 }

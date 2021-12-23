@@ -14,7 +14,7 @@ function Home() {
             </Header>
             </Section>
             <Section>
-                <SectionText>This website is currently under development. Most of the pages are not fully complete yet.</SectionText>
+                <SectionText center>This website is currently under development. Most of the pages are not fully complete yet.</SectionText>
             </Section>
         </>
     )

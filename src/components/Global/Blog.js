@@ -20,6 +20,8 @@ export const OpeningBody = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
+    top: 25%;
+    position: relative;
 `;
 
 export const OpeningHeader = styled.div`
@@ -27,10 +29,31 @@ export const OpeningHeader = styled.div`
     font-size: 2rem;
     display: inline-block;
     text-align: left;
+    @media screen and (max-width: 400px) {
+        font-size: 8vw;
+    }
 `;
 
 export const OpeningText = styled.div`
     font-size: 1rem;
+    @media screen and (max-width: 525px) {
+        font-size: 3vw;
+    }
+`;
+
+export const OpeningLink = styled.a`
+    font-size: 1rem;
+    color: #808080;
+    cursor: pointer;
+    &.active {
+    color: #808080;
+    }
+    &:hover {
+        color: #808080;
+    }
+    @media screen and (max-width: 525px) {
+        font-size: 3vw;
+    }
 `;
 
 export const OpeningImg = styled.div`

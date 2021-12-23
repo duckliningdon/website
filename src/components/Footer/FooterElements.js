@@ -25,13 +25,23 @@ export const FooterText = styled.div`
     height: 100%;
 `;
 
-export const FooterLink = styled.div`
+export const FooterList= styled.div`
     color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 10px 1rem;
+    padding: 10px 2rem;
     height: 100%;
+`;
+
+export const FooterLink = styled.a`
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 10px 1rem;
+    height: 100%;
+    scale: 1.5;
     cursor: pointer;
     &.active {
     color: #808080;

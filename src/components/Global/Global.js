@@ -8,10 +8,9 @@ export const Header = styled.div`
     margin: 0 auto;
     width: 100%;
     background-color: #fff;
-    background-position: bottom;
+    background-position: 50% 40%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, .5);
 `;
 
@@ -57,6 +56,7 @@ export const SectionText = styled.p`
     margin-bottom: auto;
     margin-left: 5%;
     margin-right: 5%;
+    text-align: ${(props) => props.center ? 'center' : 'left'};
 `;
 
 

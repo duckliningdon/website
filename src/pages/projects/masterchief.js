@@ -2,12 +2,12 @@ import React from 'react'
 import MetaTags from 'react-meta-tags';
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import { Header, HeaderBox, Section, SectionText, HeaderTitle, Divider } from '../../components/Global/Global';
-import { Opening, OpeningCard, OpeningHeader, OpeningBody, OpeningText, OpeningImg, ImgSection, ImgCard, Img } from '../../components/Global/Blog'
+import { Opening, OpeningCard, OpeningHeader, OpeningBody, OpeningText, OpeningLink, OpeningImg, ImgSection, ImgCard, Img } from '../../components/Global/Blog'
 function masterchief() {
     return (
         <>
             <MetaTags>
-                <title>Samuel Swedberg | Master Chief</title> 
+                <title>Samuel Swedberg | Projects</title> 
             </MetaTags>
             <Section>
                 <Header style={{backgroundImage: `url("/media/pages/about/header.jpg")`}}>
@@ -19,8 +19,7 @@ function masterchief() {
                 <OpeningCard>
                     <OpeningBody>
                         <OpeningHeader>Files used:</OpeningHeader>
-                            <OpeningText>Bruh <FaExternalLinkAlt/></OpeningText>
-                            <OpeningText>Bruh <FaExternalLinkAlt/></OpeningText>
+                            <OpeningText><OpeningLink href="e" target="_blank">Halo 4 Helmet Full Size A <FaExternalLinkAlt/></OpeningLink></OpeningText>
                     </OpeningBody>
                     <OpeningImg style={{backgroundImage: `url("/media/pages/about/header.jpg")`}}></OpeningImg>
                 </OpeningCard>
