@@ -20,7 +20,7 @@ function About() {
             </Section>
             <Divider/>
             <Section>
-                <Header style={{backgroundImage: `url("/media/pages/about/mission.JPG")`}}>
+                <Header style={{backgroundImage: `url("/media/pages/about/mission.jpg")`}}>
                     <HeaderBox><HeaderTitle>MY MISSION</HeaderTitle></HeaderBox>
                 </Header>
             </Section>

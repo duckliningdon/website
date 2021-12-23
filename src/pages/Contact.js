@@ -9,7 +9,7 @@ function Contact() {
                 <title>Samuel Swedberg | Contact</title> 
             </MetaTags>
             <Section>
-                <Header style={{backgroundImage: `url("/media/pages/projects/references/header.JPG")`}}>
+                <Header style={{backgroundImage: `url("/media/pages/projects/references/header.jpg")`}}>
                     <HeaderBox><HeaderTitle>CONTACT</HeaderTitle></HeaderBox>
                 </Header>
             </Section>

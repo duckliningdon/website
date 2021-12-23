@@ -49,6 +49,7 @@ export const Section = styled.section`
     background-color: #fff;
     z-index: 1;
     overflow: hidden;
+    padding-bottom: 10px;
 `;
 
 export const SectionText = styled.p`

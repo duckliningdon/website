@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import ScrollButton from './components/ScrollButton';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
@@ -19,24 +20,27 @@ import HMP from './pages/projects/hmp';
 function App() {
   return (
     <>
-      <Router>
-        <Navbar/>
-        <Routes>
-          <Route path='/' exact element={<Home />}></Route>
-          <Route path='/projects' element={<Projects />}></Route>
-          <Route path='/about' element={<About />}></Route>
-          <Route path='/contact' element={<Contact />}></Route>
-          <Route path='*' element={<PageNotFound />}></Route>
-          <Route path='/projects/masterchief' element={<MasterChiefHelmet />}></Route>
-          <Route path='/projects/energysword' element={<EnergySword />}></Route>
-          <Route path='/projects/darthvaderhelmet' element={<DarthVaderHelmet />}></Route>
-          <Route path='/projects/501sthelmet' element={<FiveOhHelmet />}></Route>
-          <Route path='/projects/kenobisaber' element={<KenobiSaber />}></Route>
-          <Route path='/projects/arcreactor' element={<ArcReactor />}></Route>
-          <Route path='/projects/hmp' element={<HMP />}></Route>
-        </Routes>
-        <Footer/>
-      </Router>
+        <body style={{paddingBottom: '150px'}}>
+        <Router>
+          <Navbar/>
+          <Routes>
+            <Route path='/' exact element={<Home />}></Route>
+            <Route path='/projects' element={<Projects />}></Route>
+            <Route path='/about' element={<About />}></Route>
+            <Route path='/contact' element={<Contact />}></Route>
+            <Route path='*' element={<PageNotFound />}></Route>
+            <Route path='/projects/masterchief' element={<MasterChiefHelmet />}></Route>
+            <Route path='/projects/energysword' element={<EnergySword />}></Route>
+            <Route path='/projects/darthvaderhelmet' element={<DarthVaderHelmet />}></Route>
+            <Route path='/projects/501sthelmet' element={<FiveOhHelmet />}></Route>
+            <Route path='/projects/kenobisaber' element={<KenobiSaber />}></Route>
+            <Route path='/projects/arcreactor' element={<ArcReactor />}></Route>
+            <Route path='/projects/hmp' element={<HMP />}></Route>
+          </Routes>
+          <ScrollButton/>
+          <Footer/>
+        </Router>
+        </body>
     </>
   );
 }
